@@ -16,7 +16,7 @@ int main()
             continue;
         while ((c < 0) || (c > 4)) {
             printf("Please, choose from 0 to 4: ");
-            scanf("%d, &c");
+            scanf("%d", &c);
         }
 
         printf("\nInput numbers:\n first:\n  real part: ");
