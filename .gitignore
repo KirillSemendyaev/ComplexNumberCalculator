@@ -78,3 +78,5 @@ dkms.conf
 *.iml
 out
 gen
+Будет удалено CMakeLists.txt
+Будет удалено cmake-build-debug/
