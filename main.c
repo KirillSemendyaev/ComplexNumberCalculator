@@ -2,6 +2,7 @@
 
 #include "complexnumber.h"
 #include "add_complex.h"
+#include "substract_complex.h"
 
 int main()
 {
@@ -31,6 +32,9 @@ int main()
         switch (c) {
             case 1:
                 add_complex(&result, a, b);
+                break;
+            case 2:
+                substract_complex(&result, a, b);
                 break;
             default:
                 break;
