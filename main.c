@@ -3,6 +3,8 @@
 #include "complexnumber.h"
 #include "add_complex.h"
 #include "substract_complex.h"
+#include "multiply_complex.h"
+#include "divide_complex.h"
 
 int main()
 {
@@ -36,14 +38,20 @@ int main()
             case 2:
                 substract_complex(&result, a, b);
                 break;
+            case 3:
+                multiply_complex(&result, a, b);
+                break;
+            case 4:
+                divide_complex(&result, a, b);
+                break;
             default:
                 break;
         }
         printf("Result: ");
         if (result.imaginary >= 0) {
-            printf("%.0lf+%.0lfi\n", result.real, result.imaginary);
+            printf("%.3lf+%.3lfi\n", result.real, result.imaginary);
         } else {
-            printf("%.0lf%.0lfi\n", result.real, result.imaginary);
+            printf("%.3lf%.3lfi\n", result.real, result.imaginary);
         }
     }
 
